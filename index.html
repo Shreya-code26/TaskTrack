@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskTrack</title>
+
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Stats Container: Progress bar and stats -->
+        <div class="stats-container">
+            <div class="details">
+                <h1>TaskTrack</h1>
+                <p>Track your Progress!</p>
+                <div id="progressBar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div class="stats-numbers">
+                <p id="numbers">0 / 0</p> <!-- Task completion stats -->
+            </div>
+        </div>
+
+        <!-- Task Input Form -->
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Write your task" />
+            <button id="newTask" type="submit">+</button> <!-- Add new task -->
+        </form>
+
+        <!-- Task List -->
+        <ul id="task-list" class="task-list"></ul>
+    </div>
+
+    <!-- JS file link -->
+    <script src="./script.js"></script>
+    
+</body>
+</html>
